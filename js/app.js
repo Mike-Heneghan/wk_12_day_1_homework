@@ -8,11 +8,13 @@ document.addEventListener('DOMContentLoaded', () =>{
 const handleButtonClicked = function(event){
   event.preventDefault();
   const inputTitle = this.title.value;
-  // console.log(inputTitle);
   const inputAuthor = this.author.value;
-  // console.log(inputAuthor);
   const inputCategory = this.category.value;
-  // console.log(inputCategory);
   const selectedGenre = this.genre.value;
+  this.reset();
+
+  console.log(inputTitle);
+  console.log(inputAuthor);
+  console.log(inputCategory);
   console.log(selectedGenre);
 }
